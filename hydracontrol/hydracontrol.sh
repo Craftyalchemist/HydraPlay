@@ -7,7 +7,7 @@ NUMBER_OF_STREAMS=3
 ##
 install_requirements(){
   apt-get update
-  apt-get insteall mopidy mopidy-soundcloud mopidy-spotify pulseaudio wget unzip
+  apt-get install mopidy mopidy-soundcloud mopidy-spotify pulseaudio wget unzip
   wget 'https://github.com/badaix/snapcast/releases/download/v'$SNAPCASTVERSION'/snapserver_'$SNAPCASTVERSION'_armhf.deb'
   dpkg -i --force-all 'snapserver_'$SNAPCASTVERSION'_armhf.deb'
   apt-get -f install -y
